@@ -151,6 +151,9 @@ static int name_from_dns(struct address buf[static MAXADDRS], char canon[static 
 				return EAI_NONAME;
 			nq++;
 		}
+
+		//hack: if set the AF_UNSPEC family, just return ipv4 result
+		if (family == AF_UNSPEC) break;
 	}
 
 	if (__res_msend_rc(nq, qp, qlens, ap, alens, sizeof *abuf, conf) < 0)
