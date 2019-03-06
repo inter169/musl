@@ -21,3 +21,8 @@ bootstrapping, and Linux distributions built on musl can be found on
 the project website:
 
     http://www.musl-libc.org/
+
+Note:
+
+This repo was a copy of official git://git.musl-libc.org/musl, and the
+commit was: 4918b7fb0d9f3d3fd4b46be3313901fbd772064b
